@@ -1,0 +1,50 @@
+import { Button, ButtonProps } from "@mui/material";
+import { COLORS } from "constant/color";
+
+interface ButtonTypes extends ButtonProps {
+    title?: string;
+    textColor?: string;
+    background?: string;
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+}
+
+const CustomButton = ({
+    variant = "contained",
+    title,
+    endIcon,
+    startIcon,
+    onClick,
+    textColor,
+    background,
+    ...props
+}: ButtonTypes) => {
+    return (
+        <Button
+            {...props}
+            variant={variant}
+            startIcon={startIcon}
+            endIcon={endIcon}
+            onClick={onClick}
+            sx={{
+                maxWidth:'max-content',
+                borderRadius: "50px",
+                textTransform: "capitalize",
+                px: "25px",
+                py: "10px",
+                ...(variant === "contained" && {
+                    backgroundColor: background ? background : COLORS.primary.main,
+                    color: textColor ? textColor : COLORS.white.main,
+                }),
+                ...(variant === "outlined" && {
+                    // border: "1px solid #315D57",
+                    border:`1px solid ${COLORS.primary.main}`,
+                    color: "COLORS.primary.main",
+                    backgroundColor: "transparent",
+                }),
+            }}
+        >
+            {title}
+        </Button>
+    );
+};
+export default CustomButton;
