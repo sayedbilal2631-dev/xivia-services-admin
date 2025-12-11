@@ -31,11 +31,11 @@ import {
 } from "constant";
 import { useParams } from "react-router";
 import useUpdateUser from "features/ManageUserProfile/hooks/useUpdateUser";
-import { User } from "collections";
 import useUser from "features/ManageUserProfile/hooks/useUser";
 import { useToast } from "context";
 import { doc, Timestamp, updateDoc } from "firebase/firestore";
 import { db } from "libs";
+import { User } from "firebase/auth";
 
 const Section = ({ title }: { title: string }) => (
     <Box sx={{ mb: 2 }}>

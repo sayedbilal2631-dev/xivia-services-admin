@@ -16,7 +16,7 @@ export interface Team {
     images: string;
 }
 
-const ManageUsersContainer = () => {
+const ManageMemberContainer = () => {
     const methods = useForm();
     const [team, setTeam] = useState<any[]>([]);
 
@@ -129,4 +129,4 @@ const ManageUsersContainer = () => {
     );
 };
 
-export default ManageUsersContainer;
+export default ManageMemberContainer;

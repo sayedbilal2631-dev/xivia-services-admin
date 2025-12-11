@@ -1,8 +1,8 @@
 // hooks/useUser.ts
 import { useQuery } from "@tanstack/react-query";
+import { User } from "firebase/auth";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "libs";
-import { User } from "collections";
 
 const useUser = (uid: string) => {
     return useQuery({

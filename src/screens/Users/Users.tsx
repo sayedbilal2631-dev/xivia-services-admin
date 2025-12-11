@@ -1,11 +1,11 @@
-import { ManageUsersContainer } from "features"
+import ManageMemberContainer from "features/ManageUsers/container/ManageUsersContainer/ManageUsersContainer"
 import { AppLayout } from "layout"
 
 
 const Users = () => {
     return (
         <AppLayout>
-            <ManageUsersContainer />
+            <ManageMemberContainer />
         </AppLayout>
     )
 }

@@ -1,17 +1,16 @@
-// import { ManageSafetyReportContainer, ManageUsersContainer } from "features"
-import { ManageSafetyReportContainer } from "features"
+import ManageProjectContainer from "features/ManageSafetyReport/container/ManageSafetyReportContainer/ManageSafetyReportContainer"
 import { AppLayout } from "layout"
 
 
-const SafetyReport = () => {
+const Project = () => {
     return (
         <AppLayout>
-            <ManageSafetyReportContainer />
-                 {/* <ManageUsersContainer /> */}
+            <ManageProjectContainer />
+            {/* <ManageUsersContainer /> */}
 
 
         </AppLayout>
     )
 }
 
-export default SafetyReport
+export default Project

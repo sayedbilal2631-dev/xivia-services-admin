@@ -23,7 +23,7 @@ interface ServiceItem {
   bgcolor: string;
 }
 
-const ManageAnalyticsContainer = () => {
+const ManageServicesContainer = () => {
   const methods = useForm();
 
   const [openDialog, setOpenDialog] = useState(false);
@@ -192,7 +192,8 @@ const ManageAnalyticsContainer = () => {
                 placeholder="#FFD877"
                 name="bgcolor"
                 label="Background Color"
-                type="text"
+                type="color"
+
               />
             </Grid>
           </Grid>
@@ -202,4 +203,4 @@ const ManageAnalyticsContainer = () => {
   );
 };
 
-export default ManageAnalyticsContainer;
+export default ManageServicesContainer;

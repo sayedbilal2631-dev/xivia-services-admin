@@ -28,7 +28,7 @@ interface Project {
     image?: string;
 }
 
-const ManageProjectsContainer = () => {
+const ManageProjectContainer = () => {
     const [projects, setProjects] = useState<Project[]>([]);
     const [loading, setLoading] = useState<boolean>(false);
 
@@ -150,4 +150,4 @@ const ManageProjectsContainer = () => {
     );
 };
 
-export default ManageProjectsContainer;
+export default ManageProjectContainer;

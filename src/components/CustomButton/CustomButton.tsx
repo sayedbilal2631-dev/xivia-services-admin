@@ -2,7 +2,7 @@ import { Button, ButtonProps } from "@mui/material";
 import { COLORS } from "constant/color";
 
 interface ButtonTypes extends ButtonProps {
-    title?: string;
+    title?: string | any;
     textColor?: string;
     background?: string;
     onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;

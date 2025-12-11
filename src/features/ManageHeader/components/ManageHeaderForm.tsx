@@ -20,7 +20,7 @@ const ManageHeaderForm = () => {
     const navigate = useNavigate();
     const methods = useForm<formDataType>();
     const { handleSubmit } = methods;
-    const [getData, setGetData] = useState<formDataType>({})
+    // const [getData, setGetData] = useState<formDataType>({})
     const onSubmit = async (data: formDataType): Promise<void> => {
         try {
             await addDoc(collection(db, 'manageHeader'), {

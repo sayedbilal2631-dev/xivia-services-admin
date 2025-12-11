@@ -17,17 +17,17 @@ export const NAVDATA = [
   {
     icon: PeopleAltOutlined,
     path: "/users",
-    title: 'add member'
+    title: 'member'
   },
   {
     icon: EditOutlined,
     path: "/safety-report",
-    title: 'add project'
+    title: 'project'
   },
   {
     icon: DataUsageOutlined,
     path: "/analytics",
-    title: 'add service'
+    title: 'service'
   },
   {
     icon: Settings,

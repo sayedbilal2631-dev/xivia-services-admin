@@ -1,4 +1,4 @@
-import { Drawer, IconButton, Stack, useMediaQuery, Typography} from "@mui/material";
+import { Drawer, IconButton, Stack, useMediaQuery, Typography } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link, useLocation } from "react-router";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -21,11 +21,6 @@ const AsideBar = () => {
                 gap: "16px",
                 alignItems: "center",
                 backgroundColor: COLORS.primary.light,
-                borderRight: "1px solid rgba(0,0,0,0.07)",
-                boxShadow: "4px 0 16px rgba(0,0,0,0.08)",
-
-                borderTopRightRadius: "14px",
-                borderBottomRightRadius: "14px",
             }}
         >
             {isDrawer && (
@@ -81,7 +76,7 @@ const AsideBar = () => {
                                 cursor: "pointer",
                                 transition: "250ms ease",
 
-                                // ⭐ Active State
+                                //  Active State
                                 backgroundColor: isActive
                                     ? COLORS.primary.hardDark
                                     : COLORS.primary.light,
@@ -89,7 +84,7 @@ const AsideBar = () => {
                                     ? "2px solid rgba(255,255,255,0.3)"
                                     : "2px solid transparent",
 
-                                // ⭐ Hover
+                                //  Hover
                                 "&:hover": {
                                     backgroundColor: COLORS.primary.hardDark,
                                     transform: "translateY(-2px)",

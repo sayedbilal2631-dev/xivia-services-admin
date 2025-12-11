@@ -1,12 +1,11 @@
 import * as React from 'react';
-import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { Box } from '@mui/material';
+import Tabs from '@mui/material/Tabs';
 import { COLORS } from 'constant/color';
-import PhoneNumberTab from '../PhoneNumberTab/PhoneNumberTab';
-import AccountInfoTab from '../AccountInfoTab/AccountInfoTab';
-import PasswordTab from '../PasswordTab/PasswordTab';
 import EmailTab from '../EmailTab/EmailTab';
+import PasswordTab from '../PasswordTab/PasswordTab';
+import AccountInfoTab from '../AccountInfoTab/AccountInfoTab';
 
 const SettingsTabs = () => {
     const [value, setValue] = React.useState('AccountInformation');
@@ -58,13 +57,11 @@ const SettingsTabs = () => {
                     <Tab value="AccountInformation" label="Account Information" />
                     <Tab value="Email" label="Email" />
                     <Tab value="Password" label="Password" />
-                    <Tab value="PhoneNumber" label="Phone Number" />
                 </Tabs>
             </Box>
             {value === "AccountInformation" && <AccountInfoTab />}
             {value === "Email" && <EmailTab />}
             {value === "Password" && <PasswordTab />}
-            {value === "PhoneNumber" && <PhoneNumberTab />}
         </>
     );
 };

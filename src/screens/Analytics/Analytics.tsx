@@ -1,13 +1,13 @@
-import { ManageAnalyticsContainer } from "features"
+import ManageServicesContainer from "features/ManageAnalytics/container/ManageAnalyticsContainer/ManageAnalyticsContainer"
 import { AppLayout } from "layout"
 
 
-const Analytics = () => {
+const Service = () => {
     return (
         <AppLayout>
-            <ManageAnalyticsContainer />
+            <ManageServicesContainer />
         </AppLayout>
     )
 }
 
-export default Analytics
+export default Service

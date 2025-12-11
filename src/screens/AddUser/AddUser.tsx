@@ -1,6 +1,6 @@
 import { ManangeAddUserContainer } from "features"
 
-const AddUser = () => {
+const Team = () => {
     return (
         <>
                 <ManangeAddUserContainer />
@@ -9,4 +9,4 @@ const AddUser = () => {
     )
 }
 
-export default AddUser
+export default Team

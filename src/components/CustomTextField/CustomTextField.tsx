@@ -42,7 +42,7 @@ const getDefaultRules = (fieldName: string): RegisterOptions => {
 
         case "firstName":
             return {
-                required: "Name is required",
+                required: "firstName is required",
                 maxLength: {
                     value: 25,
                     message: "Max 25 characters allowed",
@@ -54,7 +54,7 @@ const getDefaultRules = (fieldName: string): RegisterOptions => {
             };
         case "lastName":
             return {
-                required: "Name is required",
+                required: "lastName is required",
                 maxLength: {
                     value: 25,
                     message: "Max 25 characters allowed",
